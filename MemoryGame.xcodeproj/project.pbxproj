@@ -14,6 +14,11 @@
 		120496341CAFB54000DE46EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 120496321CAFB54000DE46EA /* LaunchScreen.storyboard */; };
 		1204963F1CAFB54000DE46EA /* MemoryGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1204963E1CAFB54000DE46EA /* MemoryGameTests.swift */; };
 		1204964A1CAFB54000DE46EA /* MemoryGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120496491CAFB54000DE46EA /* MemoryGameUITests.swift */; };
+		120496581CAFB59A00DE46EA /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120496571CAFB59A00DE46EA /* GameModel.swift */; };
+		126FC21E1CAFED8700EFFED7 /* baldhill.png in Resources */ = {isa = PBXBuildFile; fileRef = 126FC21A1CAFED8700EFFED7 /* baldhill.png */; };
+		126FC21F1CAFED8700EFFED7 /* cathedral.png in Resources */ = {isa = PBXBuildFile; fileRef = 126FC21B1CAFED8700EFFED7 /* cathedral.png */; };
+		126FC2201CAFED8700EFFED7 /* lake.png in Resources */ = {isa = PBXBuildFile; fileRef = 126FC21C1CAFED8700EFFED7 /* lake.png */; };
+		126FC2211CAFED8700EFFED7 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 126FC21D1CAFED8700EFFED7 /* question.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		120496451CAFB54000DE46EA /* MemoryGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		120496491CAFB54000DE46EA /* MemoryGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameUITests.swift; sourceTree = "<group>"; };
 		1204964B1CAFB54000DE46EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		120496571CAFB59A00DE46EA /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		126FC21A1CAFED8700EFFED7 /* baldhill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = baldhill.png; sourceTree = "<group>"; };
+		126FC21B1CAFED8700EFFED7 /* cathedral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cathedral.png; sourceTree = "<group>"; };
+		126FC21C1CAFED8700EFFED7 /* lake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lake.png; sourceTree = "<group>"; };
+		126FC21D1CAFED8700EFFED7 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,17 @@
 		120496281CAFB54000DE46EA /* MemoryGame */ = {
 			isa = PBXGroup;
 			children = (
+				126FC21A1CAFED8700EFFED7 /* baldhill.png */,
+				126FC21B1CAFED8700EFFED7 /* cathedral.png */,
+				126FC21C1CAFED8700EFFED7 /* lake.png */,
+				126FC21D1CAFED8700EFFED7 /* question.png */,
 				120496291CAFB54000DE46EA /* AppDelegate.swift */,
 				1204962B1CAFB54000DE46EA /* ViewController.swift */,
 				1204962D1CAFB54000DE46EA /* Main.storyboard */,
 				120496301CAFB54000DE46EA /* Assets.xcassets */,
 				120496321CAFB54000DE46EA /* LaunchScreen.storyboard */,
 				120496351CAFB54000DE46EA /* Info.plist */,
+				120496571CAFB59A00DE46EA /* GameModel.swift */,
 			);
 			path = MemoryGame;
 			sourceTree = "<group>";
@@ -234,7 +249,11 @@
 			files = (
 				120496341CAFB54000DE46EA /* LaunchScreen.storyboard in Resources */,
 				120496311CAFB54000DE46EA /* Assets.xcassets in Resources */,
+				126FC2211CAFED8700EFFED7 /* question.png in Resources */,
+				126FC2201CAFED8700EFFED7 /* lake.png in Resources */,
+				126FC21F1CAFED8700EFFED7 /* cathedral.png in Resources */,
 				1204962F1CAFB54000DE46EA /* Main.storyboard in Resources */,
+				126FC21E1CAFED8700EFFED7 /* baldhill.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +280,7 @@
 			files = (
 				1204962C1CAFB54000DE46EA /* ViewController.swift in Sources */,
 				1204962A1CAFB54000DE46EA /* AppDelegate.swift in Sources */,
+				120496581CAFB59A00DE46EA /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +505,7 @@
 				120496501CAFB54000DE46EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		120496511CAFB54000DE46EA /* Build configuration list for PBXNativeTarget "MemoryGameTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +514,7 @@
 				120496531CAFB54000DE46EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		120496541CAFB54000DE46EA /* Build configuration list for PBXNativeTarget "MemoryGameUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +523,7 @@
 				120496561CAFB54000DE46EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
