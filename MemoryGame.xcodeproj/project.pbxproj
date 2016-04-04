@@ -19,6 +19,7 @@
 		126FC21F1CAFED8700EFFED7 /* cathedral.png in Resources */ = {isa = PBXBuildFile; fileRef = 126FC21B1CAFED8700EFFED7 /* cathedral.png */; };
 		126FC2201CAFED8700EFFED7 /* lake.png in Resources */ = {isa = PBXBuildFile; fileRef = 126FC21C1CAFED8700EFFED7 /* lake.png */; };
 		126FC2211CAFED8700EFFED7 /* question.png in Resources */ = {isa = PBXBuildFile; fileRef = 126FC21D1CAFED8700EFFED7 /* question.png */; };
+		129D3F1A1CB254E5008136D9 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129D3F191CB254E5008136D9 /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		126FC21B1CAFED8700EFFED7 /* cathedral.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cathedral.png; sourceTree = "<group>"; };
 		126FC21C1CAFED8700EFFED7 /* lake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lake.png; sourceTree = "<group>"; };
 		126FC21D1CAFED8700EFFED7 /* question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question.png; sourceTree = "<group>"; };
+		129D3F191CB254E5008136D9 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				120496321CAFB54000DE46EA /* LaunchScreen.storyboard */,
 				120496351CAFB54000DE46EA /* Info.plist */,
 				120496571CAFB59A00DE46EA /* GameModel.swift */,
+				129D3F191CB254E5008136D9 /* TileView.swift */,
 			);
 			path = MemoryGame;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 			files = (
 				1204962C1CAFB54000DE46EA /* ViewController.swift in Sources */,
 				1204962A1CAFB54000DE46EA /* AppDelegate.swift in Sources */,
+				129D3F1A1CB254E5008136D9 /* TileView.swift in Sources */,
 				120496581CAFB59A00DE46EA /* GameModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

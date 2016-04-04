@@ -36,7 +36,7 @@ class GameModel: CustomStringConvertible{
     var counter: Int = 0
     //A counter for the number of matched tiles (so we can determine when the game has completed)
     
-    //var delegator:
+    var delegator: modelDelegator?
     //A delegate (iOS) / interface reference (Android) ????
     
     var score: Int
@@ -113,3 +113,9 @@ class GameModel: CustomStringConvertible{
     }
 }
 
+protocol modelDelegator{
+    func gameDidComplete(gameModel: GameModel)
+    func didMatchTile(gameodel: GameModel, tileIndex: Int, PreviousTileIndex: Int)
+    func didFailToMatchTile(gameModel: GameModel, tileIndex: Int, PreviousTileIndex: Int)
+    func socreDidUpdate(gameModel: GameModel, newScore: Int)
+}
