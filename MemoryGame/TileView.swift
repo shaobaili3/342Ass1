@@ -35,6 +35,8 @@ class TileView: UIView {
         self.addConstraints([width, height, top, left])
         let tapGesture = UITapGestureRecognizer(target: self, action: "Tap")
         addGestureRecognizer(tapGesture)
+//        self.tileDelegator = self
+        
 
     }
     
@@ -53,8 +55,10 @@ class TileView: UIView {
     }
     
     func Tap(){
+        print("1")
+        tileDelegator?.didSelectTile(self)
         self.Reveal()
-        //tileViewDelegator.didSelectTile(self)
+        print("2")
     }
 }
 
