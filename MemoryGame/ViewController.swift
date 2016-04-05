@@ -46,7 +46,6 @@ class ViewController: UIViewController, TileViewDelegator, modelDelegator {
     
     func gameDidComplete() {
         model.counter++
-        print(model.counter)
         if model.counter == numTile/2
         {
             let message = "Your score: " + String(model.score);
@@ -100,7 +99,6 @@ class ViewController: UIViewController, TileViewDelegator, modelDelegator {
             let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
             dispatch_after(time, dispatch_get_main_queue())
                 {
-                    print("cover")
                     self.tileViews[self.model.lastTap!].Cover()
                     self.tileViews[self.model.secLastTap!].Cover()
             }
