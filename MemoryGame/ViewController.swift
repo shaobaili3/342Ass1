@@ -45,7 +45,7 @@ class ViewController: UIViewController, TileViewDelegator, modelDelegator {
     
     
     func gameDidComplete() {
-        model.counter++
+        model.counter += 1
         if model.counter == numTile/2
         {
             let message = "Your score: " + String(model.score);
