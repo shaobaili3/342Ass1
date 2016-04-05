@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 struct TileData{
-    var image: UIImage
+    var image: UIImage?
     var imageIdentifer: Int
     
 }
@@ -57,8 +57,8 @@ class GameModel: CustomStringConvertible{
     func reset(numTile: Int, imgs: [UIImage])
     {
         //Reset all game state variable
-        lastTap = nil
-        secLastTap = nil
+        lastTap = -1
+        secLastTap = -1
         initialPic = []
         flag = false
         counter = 0
@@ -75,7 +75,6 @@ class GameModel: CustomStringConvertible{
             initialPic.append( TileData(image: imgs[count] , imageIdentifer: count))
             count++
         }
-        
         
         for var index = initialPic.count - 1; index > 0; index--
         {
@@ -114,8 +113,8 @@ class GameModel: CustomStringConvertible{
 }
 
 protocol modelDelegator{
-    func gameDidComplete(gameModel: GameModel)
-    func didMatchTile(gameodel: GameModel, tileIndex: Int, PreviousTileIndex: Int)
-    func didFailToMatchTile(gameModel: GameModel, tileIndex: Int, PreviousTileIndex: Int)
-    func socreDidUpdate(gameModel: GameModel, newScore: Int)
+    func gameDidComplete()
+    func didMatchTile(gameodel: GameModel, tileView: TileView)
+    func didFailToMatchTile()
+    func scoreDidUpdate(newScore: Int)
 }

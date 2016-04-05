@@ -24,15 +24,15 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hoU-6M-TnM">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="118"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3i-HZ-xkZ" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3i-HZ-xkZ" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="118"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-yl-MqF" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hr7-yl-MqF" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="190" y="0.0" width="180" height="118"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-NI-Oz1" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZJZ-NI-Oz1" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="380" y="0.0" width="180" height="118"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
@@ -41,15 +41,15 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Wal-Dr-JQ8">
                                         <rect key="frame" x="0.0" y="128" width="560" height="117"/>
                                         <subviews>
-                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3k-gy-MWX" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k3k-gy-MWX" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="117"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-nx-IMj" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hHV-nx-IMj" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="190" y="0.0" width="180" height="117"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mb-vJ-mJY" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mb-vJ-mJY" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="380" y="0.0" width="180" height="117"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
@@ -58,15 +58,15 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Cdy-uh-Nti">
                                         <rect key="frame" x="0.0" y="255" width="560" height="118"/>
                                         <subviews>
-                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9q-r0-Zxa" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z9q-r0-Zxa" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="118"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qe-AW-QAS" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qe-AW-QAS" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="190" y="0.0" width="180" height="118"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sa-1M-wmb" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sa-1M-wmb" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="380" y="0.0" width="180" height="118"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
@@ -75,15 +75,15 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hjh-xC-sul">
                                         <rect key="frame" x="0.0" y="383" width="560" height="117"/>
                                         <subviews>
-                                            <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJ1-P1-cts" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJ1-P1-cts" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="117"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-Rd-Qi5" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-Rd-Qi5" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="190" y="0.0" width="180" height="117"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aJ-GQ-iKv" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
+                                            <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0aJ-GQ-iKv" customClass="TileView" customModule="MemoryGame" customModuleProvider="target">
                                                 <rect key="frame" x="380" y="0.0" width="180" height="117"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
@@ -120,10 +120,13 @@
                             <constraint firstItem="OOV-NY-PnU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Yik-Sd-sQx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="score" destination="e7U-L0-li3" id="A73-3n-vPL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="189" y="224"/>
+            <point key="canvasLocation" x="109" y="202"/>
         </scene>
     </scenes>
 </document>

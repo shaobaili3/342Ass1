@@ -10,16 +10,19 @@ import UIKit
 
 class TileView: UIView {
 
-    var img: UIImage
+    var img: UIImage?
     var imgView: UIImageView
     var tileDelegator: TileViewDelegator?
     var tileIndex: Int?
+    var tapGesture: UITapGestureRecognizer?
     
     required init?(coder aDecoder: NSCoder) {
-        img = UIImage(named: "lake")! //set stored image
+        //img = UIImage(named: "question")! //set stored image
         imgView = UIImageView(frame: CGRect(x: 0, y: 0, width: 69, height: 69))
         imgView.image = UIImage(named: "question")!
+        
         super.init(coder: aDecoder)
+        tapGesture = UITapGestureRecognizer(target: self, action: "Tap")
         tileIndex = self.tag
         addSubview(imgView)
         imgView.translatesAutoresizingMaskIntoConstraints = false
@@ -33,8 +36,10 @@ class TileView: UIView {
         
         //Add the constraints:
         self.addConstraints([width, height, top, left])
-        let tapGesture = UITapGestureRecognizer(target: self, action: "Tap")
-        addGestureRecognizer(tapGesture)
+        
+        addGestureRecognizer(tapGesture!)
+        
+        
 //        self.tileDelegator = self
         
 
@@ -46,19 +51,26 @@ class TileView: UIView {
     }
     
     func Cover(){
-        imgView.image = UIImage(named: "question")!
+        if(imgView.image != nil)
+        {
+            imgView.image = UIImage(named: "question")!
+        }
+        
     }
 
     func Hide(){
         imgView.image = nil
         imgView.backgroundColor = UIColor.whiteColor()
+        removeGestureRecognizer(tapGesture!)
     }
     
     func Tap(){
-        print("1")
         tileDelegator?.didSelectTile(self)
-        self.Reveal()
-        print("2")
+        
+    }
+    
+    func addGestureR(){
+        addGestureRecognizer(tapGesture!)
     }
 }
 
