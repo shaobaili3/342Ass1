@@ -115,17 +115,25 @@ class ViewController: UIViewController, TileViewDelegator, modelDelegator {
         
         if model.flag == false
         {
-            scoreDidUpdate(-100)
             let delay = 1 * Double(NSEC_PER_SEC)
             let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
             let last = self.model.lastTap!
             let secondl = self.model.secLastTap!
             //in case of corrpution when mutitread
-            
-            dispatch_after(time, dispatch_get_main_queue())
+            if last == secondl
+            {
+                // if select same tiles, will cover both immeditely without losing marks
+                self.tileViews[last].Cover()
+                self.tileViews[secondl].Cover()
+            }
+            else
+            {
+                scoreDidUpdate(-100)
+                dispatch_after(time, dispatch_get_main_queue())
                 {
                     self.tileViews[last].Cover()
                     self.tileViews[secondl].Cover()
+                }
             }
         }
     }
