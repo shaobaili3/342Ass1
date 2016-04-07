@@ -22,7 +22,7 @@ class TileView: UIView {
         imgView.image = UIImage(named: "question")!
         
         super.init(coder: aDecoder)
-        tapGesture = UITapGestureRecognizer(target: self, action: "Tap")
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(TileView.Tap))
         tileIndex = self.tag
         addSubview(imgView)
         imgView.translatesAutoresizingMaskIntoConstraints = false
