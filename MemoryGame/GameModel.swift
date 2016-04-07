@@ -73,10 +73,10 @@ class GameModel: CustomStringConvertible{
             }
             initialPic.append( TileData(image: imgs[count] , imageIdentifer: count))
             initialPic.append( TileData(image: imgs[count] , imageIdentifer: count))
-            count++
+            count += 1
         }
         
-        for var index = initialPic.count - 1; index > 0; index--
+        for index in 1...initialPic.count - 1
         {
             // Random int from 0 to index-1
             let j = Int(arc4random_uniform(UInt32(index-1)))
