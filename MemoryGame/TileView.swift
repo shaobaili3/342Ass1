@@ -72,6 +72,10 @@ class TileView: UIView {
     func addGestureR(){
         addGestureRecognizer(tapGesture!)
     }
+    
+    func removeGesture(){
+        removeGestureRecognizer(tapGesture!)
+    }
 }
 
 

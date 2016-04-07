@@ -113,7 +113,7 @@ class GameModel: CustomStringConvertible{
 }
 
 protocol modelDelegator{
-    func gameDidComplete()
+    func gameDidComplete() -> Bool
     func didMatchTile(gameodel: GameModel, tileView: TileView)
     func didFailToMatchTile()
     func scoreDidUpdate(newScore: Int)
